@@ -1,0 +1,23 @@
+# IBVAP Model Manifest
+# All deployed models must be documented here.
+# Weights are NOT committed to Git.
+# Download using: python scripts/verify_yolo26.py (auto-downloads via Ultralytics)
+
+models:
+  - name: yolo26n
+    file: models/yolo26n.pt
+    task: detect
+    source: "Ultralytics — https://docs.ultralytics.com/models/yolo26"
+    framework: PyTorch
+    input_size: 640
+    classes: COCO 80-class
+    device: cpu  # override with MODEL_DEVICE env var
+    license: "AGPL-3.0 for research/prototype; Ultralytics Enterprise for commercial use"
+    license_url: "https://ultralytics.com/license"
+    acquired_date: "verify at download time"
+    sha256: "verify at download time — run: python -c \"import hashlib; print(hashlib.sha256(open('models/yolo26n.pt','rb').read()).hexdigest())\""
+    notes: >
+      Nano model variant for CPU-first edge deployment.
+      Baseline for Phase 1; replace with yolo26s or domain-fine-tuned
+      weights for production accuracy targets.
+      IMPORTANT: Review Ultralytics license terms before any non-academic deployment.

@@ -1,0 +1,49 @@
+{
+  "spec_version": "1.1",
+  "project_codename": "IBVAP",
+  "current_phase": 1,
+  "phase_status": "COMPLETE",
+  "active_task": null,
+  "completed_phases": [0, 1],
+  "completed_tasks": [
+    "monorepo-scaffold",
+    "contracts-package",
+    "edge-agent-foundation",
+    "central-api-foundation",
+    "dashboard-scaffold",
+    "docker-compose",
+    "simulator-scaffold",
+    "contracts-tests",
+    "health-endpoint-tests"
+  ],
+  "blocked_tasks": [],
+  "last_commit": null,
+  "last_test_status": "PASSING",
+  "last_test_command": "cd packages/contracts && pytest tests/ -v && cd apps/edge-agent && pytest tests/ -v && cd apps/central-api && pytest tests/ -v",
+  "last_demo_status": null,
+  "updated_at": "2026-09-04T15:15:00Z",
+  "toolchain": {
+    "python": "3.12.14",
+    "node": "24.x",
+    "react": "19.2.x",
+    "typescript": "5.x",
+    "postgresql": "17.11",
+    "docker_compose": "v2.x"
+  },
+  "services": {
+    "edge-agent": {
+      "port": 8001,
+      "db": "sqlite",
+      "status": "scaffolded"
+    },
+    "central-api": {
+      "port": 8000,
+      "db": "postgresql",
+      "status": "scaffolded"
+    },
+    "dashboard": {
+      "port": 5173,
+      "status": "scaffolded"
+    }
+  }
+}

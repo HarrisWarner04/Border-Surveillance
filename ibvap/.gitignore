@@ -1,0 +1,86 @@
+# Environment
+.env
+.env.local
+.env.*.local
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+.uv/
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+coverage.xml
+*.cover
+
+# Node
+node_modules/
+.pnp
+.pnp.js
+dist/
+.next/
+out/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Docker
+.docker/
+
+# Secrets / credentials
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+serviceAccountKey.json
+
+# Media / models (large binaries — download via script)
+models/detection/*.pt
+models/detection/*.onnx
+models/tracking/*.pt
+simulator/sample-videos/*.mp4
+simulator/sample-videos/*.avi
+!simulator/sample-videos/.gitkeep
+
+# Databases
+*.db
+*.db-shm
+*.db-wal
+data/
+
+# Logs
+logs/
+*.log
+
+# Generated artifacts
+packages/contracts/json-schema/*.json
+apps/dashboard/src/api/generated/
+
+# Coverage reports
+htmlcov/
+coverage/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

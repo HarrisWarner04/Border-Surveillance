@@ -1,0 +1,26 @@
+# Zone configuration for demo camera
+# Coordinates are normalized [0, 1] — resolution-independent.
+# This file is loaded at startup. Hot-reload not required for Phase 1.
+
+camera_id: demo-camera-01
+
+zones:
+  - zone_id: perimeter-01
+    name: "Outer Perimeter"
+    type: restricted
+    geometry_type: polygon
+    enabled: true
+    polygon:
+      - [0.05, 0.20]
+      - [0.95, 0.20]
+      - [0.95, 0.90]
+      - [0.05, 0.90]
+
+  - zone_id: entry-gate-01
+    name: "Entry Gate"
+    type: entry
+    geometry_type: line
+    enabled: true
+    polygon:
+      - [0.40, 0.20]
+      - [0.60, 0.20]

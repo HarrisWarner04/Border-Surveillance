@@ -1,0 +1,1 @@
+"""IBVAP domain model package."""
